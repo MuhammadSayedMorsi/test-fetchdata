@@ -19,20 +19,18 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Table dark>
-        {posts.map((post: any) => (
-          <tbody>
-            <tr>
-              <td key={post.id}>{post.name}</td>
-            </tr>
-            <tr>
-              <td key={post.id}>{post.body}</td>
-            </tr>
-          </tbody>
-        ))}
-      </Table>
-    </>
+    <Table dark>
+      {posts.map((post: any) => (
+        <tbody>
+          <tr>
+            <td key={post.id}>{post.name}</td>
+          </tr>
+          <tr>
+            <td key={post.id}>{post.body}</td>
+          </tr>
+        </tbody>
+      ))}
+    </Table>
   );
 }
 
